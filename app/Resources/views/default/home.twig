@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+
+    </head>
+    <body>
+        {% block body %}
+            <a href="details.twig">new-post</a>
+         {# {% for post in posts %}#}
+         <h2><a href="details.twig">Title {{post.title}}</a></h2>
+               
+                <p>{{post.content}}</p>
+          {# {% endfor %}#}
+        {% endblock %}
+
+    </body>
+</html>
+
